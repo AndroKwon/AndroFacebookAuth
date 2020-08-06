@@ -28,13 +28,11 @@ public class AndroFacebookAuth implements AndroAuthProvider {
     {
         FacebookCallbackManager = CallbackManager.Factory.create();
 
-        NativeMessage message = (NativeMessage)(new Gson()).fromJson(jsonData, (new NativeMessage()).getClass());
-
         try
         {
-            JSONObject jsonObj = new JSONObject(message.jsonData);
+            JSONObject jsonObj = new JSONObject(jsonData);
             FacebookSdk.setApplicationId(jsonObj.optString("facebookApplicationId"));
-            FacebookSdk.sdkInitialize(AndroActivity.activity);
+            FacebookSdk.sdkInitialize(AndroActivity.activity.getApplicationContext());
         } catch (JSONException e) {
             e.printStackTrace();
         }
