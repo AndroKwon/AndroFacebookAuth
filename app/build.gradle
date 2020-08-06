@@ -60,7 +60,7 @@ dependencies {
 
     implementation 'com.google.code.gson:gson:2.8.6'
 
-    implementation 'com.andro.unityplatformplugin.common:app:0.0.10'
+    implementation 'com.andro.unityplatformplugin.common:app:0.0.16'
 
     compile 'com.facebook.android:facebook-login:6.5.1'
 }
