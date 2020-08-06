@@ -18,7 +18,7 @@ dependencies {
     public class PlatformAuth
     {
         ....
-        private readonly string FacebookAppID = "xxxxxxxxxxxxxxxxxx";       
+        public static string FacebookAppID = "xxxxxxxxxxxxxxxxxx";       
 ```
 
 인게임 시작부분에서 초기화 호출을 진행합니다.
