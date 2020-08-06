@@ -15,7 +15,7 @@ dependencies {
 
 페이스북 계정 ID 를 초기화합니다
 ```
-    public class PlatformAndroidAuth : IPlatformAuth
+    public class PlatformAuth
     {
         ....
         private readonly string FacebookAppID = "xxxxxxxxxxxxxxxxxx";       
